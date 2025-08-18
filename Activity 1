@@ -1,1 +1,49 @@
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input two numbers
+        int num1 = 5;
+        int num2 = 2;
+        System.out.println("First number: " + num1);
+        System.out.println("Second number: " + num2);
+
+        // Input operation
+        System.out.print("Choose operation (add, subtract, multiply, divide, modulo): ");
+        String operation = scanner.next();
+
+        int result;
+
+        // Arithmetic process using if-else
+        if (operation.equalsIgnoreCase("add")) {
+            result = num1 + num2;
+            System.out.println("Result: " + result);
+        } else if (operation.equalsIgnoreCase("subtract")) {
+            result = num1 - num2;
+            System.out.println("Result: " + result);
+        } else if (operation.equalsIgnoreCase("multiply")) {
+            result = num1 * num2;
+            System.out.println("Result: " + result);
+        } else if (operation.equalsIgnoreCase("divide")) {
+            if (num2 != 0) {
+                result = num1 / num2;
+                System.out.println("Result: " + result);
+            } else {
+                System.out.println("Error: Cannot divide by zero.");
+            }
+        } else if (operation.equalsIgnoreCase("modulo")) {
+            if (num2 != 0) {
+                result = num1 % num2;
+                System.out.println("Result (Remainder): " + result);
+            } else {
+                System.out.println("Error: Cannot perform modulo with zero.");
+            }
+        } else {
+            System.out.println("Invalid operation.");
+        }
+
+        scanner.close();
+    }
+}
