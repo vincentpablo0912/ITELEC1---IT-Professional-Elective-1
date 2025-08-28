@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Second number: " + num2);
 
         // Input operation
-        System.out.print("Choose operation (add, subtract, multiply, divide, modulo): ");
+        System.out.print("Choose operation (add, subtract, multiply, divide): ");
         String operation = scanner.next();
 
         int result;
