@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Second number: " + num2);
 
         // Input operation
-        System.out.print("Choose operation (add, subtract, multiply, divide, modulo): ");
+        System.out.print("Choose operation (add, subtract, multiply, divide): ");
         String operation = scanner.next();
 
         int result;
@@ -32,13 +32,6 @@ public class Main {
                 System.out.println("Result: " + result);
             } else {
                 System.out.println("Error: Cannot divide by zero.");
-            }
-        } else if (operation.equalsIgnoreCase("modulo")) {
-            if (num2 != 0) {
-                result = num1 % num2;
-                System.out.println("Result (Remainder): " + result);
-            } else {
-                System.out.println("Error: Cannot perform modulo with zero.");
             }
         } else {
             System.out.println("Invalid operation.");
