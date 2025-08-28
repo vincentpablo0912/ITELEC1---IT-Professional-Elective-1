@@ -34,9 +34,6 @@ public class Main {
                 System.out.println("Error: Cannot divide by zero.");
             }
         } else {
-                System.out.println("Error: Cannot perform modulo with zero.");
-            }
-        } else {
             System.out.println("Invalid operation.");
         }
 
