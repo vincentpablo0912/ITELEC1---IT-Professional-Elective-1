@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input two numbers
         int num1 = 5;
         int num2 = 2;
         System.out.println("First number: " + num1);
